@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: First Step
-        run: echo "Hello Vivek, CI Pipeline is working!"
+        run: exit 1 

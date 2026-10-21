@@ -1,13 +1,13 @@
-name: My First CI Pipeline
+name: Docker Image Build
 
 on: push
 
 jobs:
-  hello:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Run a test
-        run: |
-          echo "Running test..."
-          test 2 -eq 2
-          echo "Test passed!"
+      - name: Download project files
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t vivek-nginx .

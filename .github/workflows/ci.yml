@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run a test
-       run: |
-        echo "Running test..."
-        test 2 -eq 2
-        echo "Test passed!"
+        run: |
+          echo "Running test..."
+          test 2 -eq 2
+          echo "Test passed!"
